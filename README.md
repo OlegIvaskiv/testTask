@@ -7,7 +7,7 @@ To use the application you need:
 3) create a database "testtask"
 with user "root" and password "MySQL8934"
 
-4)After this you need to run JUnit tests to populate the database
+4) After this you need to run JUnit tests to populate the database
 
 5) Run Spring Boot Application (Program.class)
 
@@ -17,4 +17,4 @@ with user "root" and password "MySQL8934"
 username "Elon"
 password "pass")
 
-8)After this you will be redirected to the url http://localhost:8080/swagger-ui.html
+8) After this you will be redirected to the url http://localhost:8080/swagger-ui.html
