@@ -18,3 +18,6 @@ username "Elon"
 password "pass")
 
 8) After this you will be redirected to the url http://localhost:8080/swagger-ui.html
+
+
+Data such as department name and employee name are unique. Therefore, you cannot register a department or employee with an existing name in the database!
