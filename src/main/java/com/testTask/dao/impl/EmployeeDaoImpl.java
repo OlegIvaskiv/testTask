@@ -13,9 +13,7 @@ import com.testTask.dao.EmployeeDao;
 import com.testTask.exceptions.DaoException;
 import com.testTask.mapper.EmployeeMapper;
 import com.testTask.model.Employee;
-import org.springframework.stereotype.Repository;
-
-@Repository
+@Component
 public class EmployeeDaoImpl implements EmployeeDao {
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeDaoImpl.class);
 	private JdbcTemplate jdbcTemplate;

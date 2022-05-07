@@ -13,9 +13,8 @@ import com.testTask.dao.DepartmentDao;
 import com.testTask.exceptions.DaoException;
 import com.testTask.mapper.DepartmentMapper;
 import com.testTask.model.Department;
-import org.springframework.stereotype.Repository;
 
-@Repository
+@Component
 public class DepartmentDaoImpl implements DepartmentDao {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(DepartmentDaoImpl.class);

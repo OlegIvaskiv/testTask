@@ -2,7 +2,6 @@ package com.testTask.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -15,22 +14,17 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import com.testTask.service.impl.EmployeeServiceImpl;
 
 @Configuration
-@ComponentScan("com.testTask")
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+	@Autowired
 	private EmployeeServiceImpl employeeService;
 
+	@Autowired
 	private PasswordEncoder passwordEncoder;
 
-	private LoginSuccessHandler loginSuccessHandler;
-
 	@Autowired
-	public SecurityConfig(EmployeeServiceImpl employeeService, PasswordEncoder passwordEncoder, LoginSuccessHandler loginSuccessHandler) {
-		this.employeeService = employeeService;
-		this.passwordEncoder = passwordEncoder;
-		this.loginSuccessHandler = loginSuccessHandler;
-	}
+	private LoginSuccessHandler loginSuccessHandler;
 
 	@Bean
 	public UserDetailsService userDetailsService() {

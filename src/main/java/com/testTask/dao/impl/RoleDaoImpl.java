@@ -10,9 +10,8 @@ import com.testTask.dao.RoleDao;
 import com.testTask.exceptions.DaoException;
 import com.testTask.mapper.RoleMapper;
 import com.testTask.model.Role;
-import org.springframework.stereotype.Repository;
 
-@Repository
+@Component
 public class RoleDaoImpl implements RoleDao {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeDaoImpl.class);
