@@ -12,8 +12,9 @@ import com.testTask.exceptions.DaoException;
 import com.testTask.exceptions.ServiceException;
 import com.testTask.model.Department;
 import com.testTask.service.DepartmentService;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class DepartmentServiceImpl implements DepartmentService {
 	
 	private DepartmentDao departmentDao;
