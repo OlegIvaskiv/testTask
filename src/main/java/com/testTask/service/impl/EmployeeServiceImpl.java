@@ -23,8 +23,9 @@ import com.testTask.model.Department;
 import com.testTask.model.Employee;
 import com.testTask.model.Role;
 import com.testTask.service.EmployeeService;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class EmployeeServiceImpl implements EmployeeService, UserDetailsService {
 
 	private EmployeeDao employeeDao;

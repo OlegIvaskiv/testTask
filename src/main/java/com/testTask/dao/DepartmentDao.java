@@ -3,6 +3,7 @@ package com.testTask.dao;
 import java.util.List;
 import com.testTask.exceptions.DaoException;
 import com.testTask.model.Department;
+import org.springframework.stereotype.Repository;
 
 public interface DepartmentDao {
 
